@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./index.js" defer></script>
+    <title>Projeto360</title>
+  </head>
+  <body>
+    <section id="user">
+      <section id="userInfo">
+        <img src="profilePic.png" id="userPic" />
+        <label for="userName" id="userName">Fulano da Silva</label>
+        <label for="userAge" id="userAge">30 anos</label>
+        <label for="userAdress" id="userAdress">Rua de testes, Centro/RS</label>
+      </section>
+
+      <h3 for="bio" id="bio">Biografia</h3>
+      <p id="userBio">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+        quibusdam mollitia quo sapiente. Optio, unde vero! Consequuntur delectus
+        rerum enim velit provident odio fugiat aliquam dolore quisquam, ut,
+        officiis consequatur?
+      </p>
+    </section>
+    <br /><br />
+    <section id="userInfoChange">
+      <h3>Editar Informações</h3>
+      <div id="form">
+        <div id="formUserInfo">
+          <input
+            type="text"
+            placeholder="Nome Completo"
+            id="formName"
+            required
+          />
+          <input type="text" placeholder="Idade" id="formAge" required />
+        </div>
+        <div id="formUserInfo">
+          <input type="text" placeholder="Rua" id="formStreet" required />
+          <input
+            type="text"
+            placeholder="Bairro"
+            id="formNeighborhood"
+            required
+          />
+          <input type="text" placeholder="Estado" id="formState" required />
+        </div>
+        <div id="formUserBio">
+          <textarea
+            type="text"
+            rows="10"
+            cols="50"
+            id="formBio"
+            placeholder="Biografia"
+            required
+          ></textarea>
+        </div>
+        <div><button id="formButton" onclick="salvar()" />SALVAR</div>
+      </div>
+    </section>
+  </body>
+</html>
